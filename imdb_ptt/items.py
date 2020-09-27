@@ -20,8 +20,9 @@ class ImdbPttItem(DjangoItem):
     # rating = scrapy.Field()
     # amount_reviews = scrapy.Field()
     # average_grade = scrapy.Field()
-    # image_urls = scrapy.Field()
-    # images = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+    image_paths = scrapy.Field()
 
 
 class YahooPttItem(DjangoItem):

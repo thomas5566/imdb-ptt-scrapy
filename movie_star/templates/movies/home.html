@@ -1,0 +1,7 @@
+<div>
+    {% for movie in movies %}
+    <a href="{% url 'detail' movie.id %}">
+    <p>{{ movie.title }} {{ movie.date }} {{ movie.genre}} {{ movie.duration }} {{ movie.rating}}</p>
+    </a>
+    {% endfor %}
+</div>

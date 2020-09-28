@@ -16,7 +16,7 @@ class PttmovieSpider(CrawlSpider):
         "ITEM_PIPELINES": {
             "imdb_ptt.pipelines.PttMoviePttPipeline": 100,
             "imdb_ptt.pipelines.DeleteNullTitlePipeline": 300,
-            "imdb_ptt.pipelines.DuplicatesTitlePipeline": 400,
+            # "imdb_ptt.pipelines.DuplicatesTitlePipeline": 400,
         },
         "CLOSESPIDER_ITEMCOUNT": 150,
     }
